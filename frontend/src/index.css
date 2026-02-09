@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&family=Imprima&family=Outfit:wght@100..900&family=Prata&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-imprima: "Imprima", sans-serif;
+}
+
+/* in your global CSS file (e.g., index.css) */
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Edge */
+}
