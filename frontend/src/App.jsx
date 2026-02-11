@@ -26,10 +26,10 @@ const App = () => {
     <div className='flex flex-row h-screen bg-black text-white'>
       <Toaster />
       {loginPage || registerPage || registerPage2 || storiesPage ? null :
-        <div className=''>
-          <Sidebar />
-          <SidebarMobile className={'fixed bottom-0'} />
-        </div>
+        <Sidebar />
+      }
+      {loginPage || registerPage || registerPage2 ? null :
+        <SidebarMobile className={'fixed bottom-0'} />
       }
 
 
