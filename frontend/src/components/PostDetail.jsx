@@ -15,6 +15,7 @@ import IconBookmarkOutline from '../assets/icon-bookmark-outline.png'
 import IconBookmarkPurple from '../assets/icon-bookmark-purple.png'
 import IconSend from '../assets/icon-send.png'
 import IconDots from '../assets/icon-dots.png'
+import IconArrowLeft from '../assets/icon-arrow-left-5f5f5f.png'
 import SidebarMobile from './SidebarMobile'
 
 
@@ -184,10 +185,11 @@ const PostDetail = ({ setPosts, post, setSelectedPost }) => {
         SetOpenComment(boolean)
     }
     return (
-        <div onClick={() => setSelectedPost(null)} className='fixed top-0 left-0 w-full h-[90%] md:p-3 flex flex-row justify-center items-center bg-black/70 z-20'>
-            <div onClick={(e) => e.stopPropagation()} className='w-full md:w-[80%] lg:w-[60%] h-full md:h-[80%] p-2 flex flex-col md:flex-row justify-start items-center bg-black md:bg-[#202020]   '>
+        <div onClick={() => setSelectedPost(null)} className=' fixed top-0 left-0 w-full h-[90%] md:p-3 flex flex-row justify-center items-center bg-black/70 z-20'>
+            <div onClick={(e) => e.stopPropagation()} className=' w-full md:w-[80%] lg:w-[60%] h-full md:h-[80%] p-2 flex flex-col md:flex-row justify-start items-center bg-black md:bg-[#202020]   '>
                 {/*Left Side */}
                 <div className={`${openComment ? 'w-[40%] h-[30%]' : 'w-full h-full'} relative flex-col  md:w-[50%]  md:h-full transition-all duration-300 `}>
+                    <img onClick={() => setSelectedPost(null)} src={IconArrowLeft} className='fixed md:hidden left-2 top-2 w-10 h-10' alt="" />
                     <img onClick={() => handleCommentToggle(false)} className='w-full h-[90%] md:h-full  object-contain ' src={post.image_URL} alt="" />
                     <div className={`${openComment ? 'hidden' : 'flex'} md:hidden  flex-row justify-between items-center gap-3 w-[80%] h-[10%] px-3 rounded-2xl bg-[#0F0F0F]`}>
                         <div className='w-full flex flex-row  items-center gap-5'>
