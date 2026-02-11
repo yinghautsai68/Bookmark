@@ -36,7 +36,8 @@ const server = http.createServer(app)
 app.use(cors({
     origin: [
         "http://localhost:5173",
-        "https://yinghautsai68.github.io"
+        "https://yinghautsai68.github.io",
+        "https://bookmark-frontend-gamma.vercel.app"
     ],
     credentials: true
 }));
