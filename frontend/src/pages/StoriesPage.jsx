@@ -10,7 +10,7 @@ const StoriesPage = ({ }) => {
     const [posts, setPosts] = useState([])
     const onLoad = async () => {
         try {
-            const response = await fetch("http://localhost:5000/api/story/get")
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/story/get`)
 
             const data = await response.json()
             console.log(data)
