@@ -154,7 +154,7 @@ const Search = () => {
                     show === 'posts' &&
                     <Grid setSelectedPost={setSelectedPost} posts={posts} className={'w-full h-[50%]'} />
                 }
-                <SidebarMobile />
+
             </div>
 
 

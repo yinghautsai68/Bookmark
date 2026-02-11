@@ -40,7 +40,7 @@ const Sidebar = () => {
         localStorage.removeItem('token')
     }
     return (
-        <div className='h-full pl-10 pr-5 py-10 border-r bg-black' style={{ borderColor: '#484141ff' }}>
+        <div className='hidden lg:block fixed w-[20%] h-full pl-10 pr-5 py-10 border-r bg-black' style={{ borderColor: '#484141ff' }}>
             < div className='flex flex-row items-center  gap-2' >
                 <img onClick={() => navigate('/profile')} className='w-15 aspect-square rounded-xl object-cover cursor-pointer' src={profilePic} alt="" />
                 <div className='flex flex-col w-full '>

@@ -142,7 +142,7 @@ const Register = ({ text }) => {
             {/*Upper Main Div */}
             <div className='flex flex-row justify-center items-center w-full h-[80%] '>
                 {/*Form Div */}
-                <div className=' flex flex-col gap-5 w-[80%] md:w-[40%] lg:w-[30%] h-[60%]  '>
+                <div className=' flex flex-col gap-5 w-[70%] md:w-[40%] lg:w-[30%] h-[60%]  '>
                     <Title text='BookMark'></Title>
                     <form action="" onSubmit={onSubmit} noValidate className='flex flex-col items-center gap-2 w-full h-full '>
                         {

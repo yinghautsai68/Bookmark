@@ -56,7 +56,7 @@ const Login = () => {
                 </div>
 
                 <div className='w-full h-full md:pl-15 pt-15 flex flex-row justify-center md:justify-start items-center'>
-                    <div className='w-[45%] flex flex-col justify-center items-center gap-5  '>
+                    <div className='w-[70%] flex flex-col justify-center items-center gap-5  '>
                         <h1 className='text-4xl text-center font-imprima'>BookMark</h1>
                         <div className='w-full flex flex-col gap-5'>
                             <form action="" onSubmit={onSubmit}>

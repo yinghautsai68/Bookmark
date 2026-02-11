@@ -330,7 +330,7 @@ const Profile = () => {
                         </div>
                     ))}
                 </div>
-                <SidebarMobile className={'fixed bottom-0'} />
+
             </div>
             {
                 edit &&

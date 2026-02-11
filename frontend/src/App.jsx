@@ -26,10 +26,12 @@ const App = () => {
     <div className='flex flex-row h-screen bg-black text-white'>
       <Toaster />
       {loginPage || registerPage || registerPage2 || storiesPage ? null :
-        <div className='hidden lg:block fixed w-[20%] h-full'>
+        <div className='border'>
           <Sidebar />
+          <SidebarMobile className={'fixed bottom-0'} />
         </div>
       }
+
 
       <div className={`w-full  ${loginPage || registerPage || registerPage2 || storiesPage ? '' : 'lg:ml-[20%]'}`}>
         <Routes>
@@ -49,10 +51,12 @@ const App = () => {
         <div className='hidden'>
           <MessageContainer />
           <MessageButton />
+
         </div>
       }
 
-      <SidebarMobile className={'fixed bottom-0'} />
+
+
     </div>
   )
 }

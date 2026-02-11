@@ -192,7 +192,7 @@ const Chatroom = () => {
 
                 </div>
 
-                <SidebarMobile />
+
             </div>
             {/*Right Side */}
             {isChat ? (
