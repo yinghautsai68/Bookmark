@@ -38,13 +38,27 @@ Bookmark 是一個全端社交平台 Side Project，
 - Full Stack 部署流程
 - Git / GitHub 版本控制管理
 
-### 展示
-登入
-註冊
-首頁
-搜尋
-聊天室
-個人檔案
-建立
-限時動態
+## 展示
+### 登入
+![Login](./screenshots/login.png)
 
+### 註冊
+![Register](./screenshots/register.png)
+
+### 首頁
+![Home](./screenshots/main.png)
+
+### 搜尋
+![Search](./screenshots/search.png)
+
+### 聊天室
+![Chatroom](./screenshots/chatroom.png)
+
+### 個人檔案
+![Profile](./screenshots/profile.png)
+
+### 建立
+![Create](./screenshots/create.png)
+
+限時動態
+![Stories](./screenshots/stories.png)
