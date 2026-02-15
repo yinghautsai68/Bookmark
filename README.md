@@ -5,7 +5,9 @@
 
 ### DEMO連結
 https://bookmark-frontend-gamma.vercel.app/
-
+### DEMO帳號與密碼
+- 帳號: demo@gmail.com
+- 密碼: 12312312
 ### 專案介紹
 Bookmark 是一個全端社交平台 Side Project，
 目的是練習 Full Stack 開發流程 以及 RWD 響應式設計。
