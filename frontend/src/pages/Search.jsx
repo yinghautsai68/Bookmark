@@ -131,7 +131,7 @@ const Search = () => {
 
             {/*Mobile */}
             <div className='block md:hidden w-full h-full'>
-                <div className='w-full h-[40%] flex flex-col justify-end items-center border'>
+                <div className='w-full h-[40%] pb-2 flex flex-col justify-end items-center '>
                     <Title text="搜尋" />
                     <SearchBar setSearch={setSearch} className='md:w-[75%] h-10' />
                     <div className='flex flex-row gap-5'>
@@ -142,7 +142,7 @@ const Search = () => {
                 {
                     show === "users"
                     &&
-                    <div className='w-full h-[50%] px-5 flex flex-col gap-3 border overflow-auto hide-scrollbar'>
+                    <div className='w-full h-[50%] px-5 flex flex-col gap-3  overflow-auto hide-scrollbar'>
                         {users.map((item, index) => {
                             return (
                                 <ListItemAccount key={item._id} user={item} variant='search' handleClick={() => handleClick(item)} handleFollow={handleFollow} followingIDs={followingIDs} />
@@ -168,7 +168,7 @@ const Search = () => {
                         <Title text="搜尋" />
                         <SearchBar setSearch={setSearch} className='md:w-[75%] h-10' />
                     </div>
-                    <div className='flex flex-col gap-1  w-full h-[50%]  px-5 lg:px-10 xl:px-15 overflow-auto hide-scrollbar '>
+                    <div className='flex flex-col gap-3  w-full h-[50%]  px-5 lg:px-10 xl:px-15 overflow-auto hide-scrollbar '>
                         {users.map((item, index) => {
                             return (
                                 <ListItemAccount key={item._id} user={item} variant='search' handleClick={() => handleClick(item)} handleFollow={handleFollow} followingIDs={followingIDs} />

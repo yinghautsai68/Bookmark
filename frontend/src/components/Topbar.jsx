@@ -61,7 +61,7 @@ const Topbar = () => {
     }
 
     return (
-        <div className=' w-full px-5 md:pl-5 flex flex-row justify-between items-center gap-3 '>
+        <div className=' w-full  px-5 md:pl-5 flex flex-row justify-between items-center gap-3 '>
             <img onClick={scrollLeft} className=' w-10 h-10 rounded-3xl cursor-pointer ' src={ArrowLeft} alt="" />
             <div ref={scrollRef} className="flex overflow-x-auto hide-scrollbar">
                 {stories.map((item, index) => (

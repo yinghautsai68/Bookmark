@@ -167,7 +167,7 @@ const Register = ({ text }) => {
                                                 <img
                                                     src={imagePreview}
                                                     alt="preview"
-                                                    className='w-full h-full rounded-2xl object-cover'
+                                                    className='w-full aspect-square rounded-2xl object-cover'
                                                 />
                                             ) : (
                                                 <span>Click to upload</span>

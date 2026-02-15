@@ -174,13 +174,13 @@ const Chatroom = () => {
     return (
         <div className='flex flex-row  w-full h-screen'>
             {/*Left Side */}
-            <div className={`${isChat ? "hidden md:flex" : "flex"} flex-col justify-start gap-3   w-full md:w-[40%] h-full    `}>
-                <div className='flex flex-col justify-end items-center w-full h-[40%] '>
+            <div className={`${isChat ? "hidden md:flex" : "flex"} flex-col justify-start   w-full md:w-[40%] h-full    `}>
+                <div className=' flex flex-col justify-end items-center w-full h-[40%] pb-2 '>
                     <Title text="聊天室" />
                     <SearchBar className='w-[75%] h-10' />
                 </div>
 
-                <div className='flex flex-col gap-1 w-full h-[50%] px-5 lg:px-10 xl:px-15 overflow-auto hide-scrollbar'>
+                <div className=' flex flex-col gap-3 w-full h-[50%] px-5 lg:px-10 xl:px-15 overflow-auto hide-scrollbar'>
                     {/*<Filter />*/}
 
                     {users.map((item, index) => {

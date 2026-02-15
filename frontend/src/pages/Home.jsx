@@ -55,11 +55,11 @@ const Home = () => {
 
     const [settingsPostID, setSettingsPostID] = useState("")
     return (
-        <div className='w-full h-full pt-5 lg:pr-5 xl:pr-0 flex flex-row gap-0 bg-black text-gray-400 '>
-            <div className='w-full lg:w-[70%]  flex flex-col justify-start items-center gap-5 overflow-auto hide-scrollbar  '>
+        <div className='w-full h-full  pt-5 lg:pr-5 xl:pr-0 flex flex-row gap-0 bg-black text-gray-400 '>
+            <div className='w-full lg:w-[70%] h-full   flex flex-col justify-start items-center gap-5 overflow-auto hide-scrollbar  '>
                 <HomeTitle />
                 <Topbar />
-                <div className='w-full md:w-[60%]    px-5 mb-15 flex flex-col justify-center items-center gap-15 '>
+                <div className='w-full md:w-[60%]     px-5 pb-[300px]  flex flex-col justify-start items-center gap-15  '>
                     {posts.map((item) => {
                         return (
 

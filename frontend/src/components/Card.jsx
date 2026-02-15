@@ -175,22 +175,24 @@ const Card = ({ post, onClick, setSettingsPostID, className }) => {
         console.log(post._id)
     }
     return (
-        <div className={`${className} flex flex-col gap-3    `}>
-            <div className='flex flex-row justify-between items-center w-full  '>
-                <div className=' flex flex-row items-center gap-5 w-[60%]  '>
+        <div className={`${className} max-w-[350px] lg:max-w-[500px]   h-[80%] flex flex-col    `}>
+            {/*User Info*/}
+            <div className='flex flex-row justify-between items-center  w-full p-2 flex-2  '>
+                <div className=' flex flex-row items-center gap-5 w-[70%] md:w-[50%]  '>
                     <NavLink to={`/profile/${userID}`} className='flex-1 flex flex-row gap-5 items-center '>
-                        <img className='w-15 h-15 rounded-xl object-cover' src={profilePic} alt="" />
-                        <p className='text-white text-sm'>{username}</p>
+                        <img className='w-10 aspect-square rounded-xl object-cover' src={profilePic} alt="" />
+                        <p className=' text-white text-sm'>{username}</p>
                     </NavLink>
-                    <p className='flex-1  text-white text-sm'>發文 {timeAgo(post.createdAt)}</p>
+                    <p className=' flex-1  text-white text-sm'>發文 {timeAgo(post.createdAt)}</p>
                 </div>
                 <img onClick={() => handleSettings(post)} className='w-5 h-5 rounded-xl object-cover cursor-pointer' src={dots} alt="" />
-
             </div>
-            <div className='w-full h-150 px-5 flex flex-row justify-center border border-gray-800 cursor-pointer'>
-                <img onClick={onClick} className=' object-cover ' src={post.image_URL} alt="" /></div>
-
-            <div className='flex flex-row justify-between px-2 py-2'>
+            {/*Post*/}
+            <div className='w-full  h-[400px] lg:h-[500px]       flex flex-row justify-center border border-[#3B3A3A]  cursor-pointer'>
+                <img onClick={onClick} className='w-full h-full  rounded-lg object-contain  ' src={post.image_URL} alt="" />
+            </div>
+            {/*Controls*/}
+            <div className='flex flex-row justify-between w-full flex-1  px-2 py-2'>
                 <div className='flex flex-row gap-2'>
                     <img src={liked ? IconHeartRed : IconHeartOutline} onClick={handleLike} className={` w-8 h-8 cursor-pointer`} />
                     <span>{likesCount}</span>
@@ -199,8 +201,8 @@ const Card = ({ post, onClick, setSettingsPostID, className }) => {
                 </div>
                 <img src={bookmarked ? IconBookmarkPurple : IconBookmarkOutline} onClick={handleBookmark} className={` w-8 h-8 cursor-pointer`} />
             </div>
-
-            <p className='text-justify'>{post.caption}</p>
+            {/*Caption*/}
+            <p className='w-full px-2  text-justify'>{post.caption}</p>
 
         </div>
     )
