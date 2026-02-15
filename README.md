@@ -60,5 +60,5 @@ Bookmark 是一個全端社交平台 Side Project，
 ### 建立
 ![Create](./screenshots/create.png)
 
-限時動態
+### 限時動態
 ![Stories](./screenshots/stories.png)
